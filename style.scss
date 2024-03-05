@@ -1,0 +1,77 @@
+/**********************************************
+CSS Reset
+***********************************************/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**********************************************
+Variables
+***********************************************/
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+/**********************************************
+Global Styles
+***********************************************/
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: $dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/**********************************************
+Project Styles
+***********************************************/
+.main-container {
+  background-color: $dark-grayish-blue;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 1rem;
+  position: relative;
+}
+
+.advice-number {
+  color: $neon-green;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.advice {
+  color: $light-cyan;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.pattern-wrapper {
+  margin-bottom: 2rem;
+}
+
+.dice-wrapper {
+  background-color: $neon-green;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -25px;
+}

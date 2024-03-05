@@ -1,5 +1,5 @@
 export default {
-  base: "/advice-generator/",
+  base: "./",
   build: {
     outDir: "dist",
   },

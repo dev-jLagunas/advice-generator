@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="descrition"
+      content="An 'Advice Generator' challenge from FrontendMentor made with SCSS, Javascript, and using Vite build tool and adviceslip API."
+    />
+    <meta name="author" content="Juan Lagunas" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="public/images/favicon-32x32.png"
+    />
+    <!-- Title -->
     <title>Advice Generator - Frontend Mentor</title>
-
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,15 +26,24 @@
     />
   </head>
   <body>
+    <!-- Advice Display Area -->
     <main class="main-container">
-      <h3 class="advice-number">ADVICE #117</h3>
+      <h3 class="advice-title">ADVICE #<span class="advice-id">117</span></h3>
       <p class="advice">"There will be a quote here"</p>
-      <div class="pattern-wrapper">
-        <img src="public/images/pattern-divider-mobile.svg" alt="" />
-      </div>
-      <div class="dice-wrapper">
+      <picture class="pattern-wrapper">
+        <source
+          media="(min-width: 768px)"
+          srcset="public/images/pattern-divider-desktop.svg"
+        />
+        <img
+          src="public/images/pattern-divider-mobile.svg"
+          alt=""
+          class="pattern"
+        />
+      </picture>
+      <button class="dice-button">
         <img src="public/images/icon-dice.svg" alt="Dice SVG" class="dice" />
-      </div>
+      </button>
     </main>
     <!-- Javascript -->
     <script type="module" src="/main.js"></script>
